@@ -1,7 +1,8 @@
 request for data 
 endpoints
-    localhost:5000/api/exchange-rates/get-exchange-rates 
+    # localhost:5000/api/exchange-rates/get-exchange-rates 
     method: post
+  ```
     post body : {
             code:"USD" -> any data that is required
             }
@@ -14,11 +15,13 @@ endpoints
             ...
         }
     }
-
-    localhost:5000/api/exchange-rates/get-exchange-codes
+```
+    # localhost:5000/api/exchange-rates/get-exchange-codes
+    ```
     method: get
     response:{
         result : [[code,country name],.....]
     }
 
 
+```
