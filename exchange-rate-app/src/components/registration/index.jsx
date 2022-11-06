@@ -10,8 +10,8 @@ const Registration = (props) => {
     const [formData, setFormData] = useState({});
     const formik = useFormik({
         initialValues: {
-            firstName: '',
-            email: '',
+            firstName: JSON.parse(window.localStorage.getItem('fristname')),
+            email: JSON.parse(window.localStorage.getItem('email')),
         },
         validate: (data) => {
             let errors = {};
@@ -30,6 +30,8 @@ const Registration = (props) => {
         },
         onSubmit: (data) => {
             setFormData(data);
+            window.localStorage.setItem('email', data.email);
+            window.localStorage.setItem('firstname', data.firstName);
             props.toggleBarChart(true);
         }
     });
