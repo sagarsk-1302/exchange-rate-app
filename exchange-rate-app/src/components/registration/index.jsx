@@ -40,7 +40,7 @@ const Registration = (props) => {
     };
 
     return (
-        <Card className="m-auto w-8 mt-5" title="Registration" subTitle="Enter your Details!">
+        <Card className="m-auto md:w-8 sm:w-12 mt-5" title="Registration" subTitle="Enter your Details!">
             <div className="flex justify-content-center flex-column">
                 <div className="card">
                     <form onSubmit={formik.handleSubmit} className="p-fluid">
