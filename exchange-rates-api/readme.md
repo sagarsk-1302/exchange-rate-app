@@ -15,8 +15,9 @@ endpoints
             ...
         }
     }
-
+```
     # localhost:5000/api/exchange-rates/get-exchange-codes
+    ```
     method: get
     response:{
         result : [[code,country name],.....]
