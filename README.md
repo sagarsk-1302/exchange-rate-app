@@ -2,7 +2,7 @@
 
 # Contains API and React Application
 
-Navigate to the dicrectories and do npm i on both packages
+Navigate to the directories and do npm i on both packages
 
 ## Run the api server : npm start
 
